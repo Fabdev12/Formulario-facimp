@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background: #F5F5F7;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+ .container{
+    background-color:#cfcfd1;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px ;
+    overflow: hidden;
+}
+
+.header{
+    background: linear-gradient(120deg, #FF3068 0%, #FF6F55 100%);
+    padding: 24px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.form{
+    padding: 18px;
+}
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: block;
+    width: 99%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #dfdfdf;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background: linear-gradient(120deg, #FF3068 0%, #FF6F55 100%);
+    color: aliceblue;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px
+}
+
+.form-content.error input{
+    border-color: #ff3b25;
+}
+
+.form-content.error a{
+    color: #ff3b25;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
+
+
+/* Estilos para o menu de navegação */
+.navbar {
+    background-color: #FF3068;
+    padding: 10px 20px;
+    position: fixed; /* Menu fixo no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa a largura total da página */
+    z-index: 1000; /* Mantém o menu acima de outros elementos */
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar-menu a:hover {
+    color: #e74c3c;
+}
+
+/* Ajuste para garantir que o conteúdo abaixo do menu não fique escondido */
+.container {
+    margin-top: 60px; /* Adiciona margem no topo para compensar o menu fixo */
+}
